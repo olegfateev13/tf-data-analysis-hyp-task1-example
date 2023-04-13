@@ -30,4 +30,4 @@ def solution(x_success: int,
     else:
         decision = False # Принимаем нулевую гипотезу 
     
-    return decision # Ваш ответ, True или False
+    return False # Ваш ответ, True или False
