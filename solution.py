@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
@@ -25,9 +26,10 @@ def solution(x_success: int,
 
 
     # Принятие решения об отклонении нулевой гипотезы
-    if p_value < alpha:
+    if conversion_test < 0.125:
         decision = True # Отклоняем нулевую гипотезу
     else:
         decision = False # Принимаем нулевую гипотезу 
     
-    return False # Ваш ответ, True или False
+    return decision # Ваш ответ, True или False
+
